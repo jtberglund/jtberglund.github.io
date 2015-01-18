@@ -516,6 +516,10 @@ aside#sidebar p.repo-owner a {
   margin-bottom: 40px;
 }
 
+.anchor {
+  width: 5px;
+}
+
 a.button {
   width: 134px;
   height: 58px;
@@ -880,6 +884,10 @@ footer a:hover {
     padding-right: 0;
     margin-left: 0;
     content: none;
+  }
+  
+  #main-content .subp {
+    margin-left: 0;
   }
 }
 
