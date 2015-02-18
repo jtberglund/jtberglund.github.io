@@ -108,6 +108,22 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
+header #jtprofileimg {
+  width: 300px;
+  height: 300px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -ms-border-radius: 150px;
+  -o-border-radius: 150px;
+  border-radius: 150px;
+  overflow: hidden;
+}
+
+/*header #jtprofileimg {
+  width: 283px;
+  height: 425px;
+}*/
+
 @media(min-width:768px) {
     header .container {
         padding-top: 200px;
@@ -168,6 +184,10 @@ header .intro-text .skills {
 .navbar-default,
 .navbar-inverse {
     border: 0;
+}
+
+.navbar-collapse {
+  
 }
 
 section {
@@ -249,6 +269,15 @@ section.success {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
     }
+}
+
+#btn-github {
+  color: #18bc9c;
+}
+
+#btn-github:hover {
+  color: #fff;
+  background-color: #18bc9c;
 }
 
 .btn-outline {
@@ -447,4 +476,8 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+.digital21 {
+  height: 100%;
 }
