@@ -478,6 +478,18 @@ footer .footer-below {
     opacity: 0;
 }
 
-.digital21 {
+.portfolio-svg {
   height: 100%;
+}
+
+.svg-div {
+  height: 260px; 
+  width: 100%;
+}
+
+.svg {
+  display: block; 
+  margin: auto; 
+  padding: 15%; 
+  height=90%;
 }

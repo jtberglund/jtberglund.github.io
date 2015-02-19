@@ -99,9 +99,9 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <h3>Summary</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                </p>
-              </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>
+                </div>
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -173,16 +173,16 @@
             </div>
             <div class="row">
               <div class="col-lg-2 col-lg-offset-2">
-                <h4>Languages</h4>
-                <ul>
-                  <li>Java</li>
-                  <li>Python</li>
-                  <li>C#</li>
-                  <li>Ruby</li>
-                  <li>C++</li>
-                  <li>Javascript</li>
-                  <li>PHP</li>
-                </ul>
+                  <h4>Languages</h4>
+                  <ul>
+                      <li>Java</li>
+                      <li>Python</li>
+                      <li>C#</li>
+                      <li>Ruby</li>
+                      <li>C++</li>
+                      <li>Javascript</li>
+                      <li>PHP</li>
+                  </ul>
               </div>
               <div class="col-lg-3">
                 <h4>Technologies</h4>
@@ -213,7 +213,6 @@
                     </a>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Portfolio Grid Section -->
@@ -225,6 +224,18 @@
                     <hr class="star-light">
                 </div>
             </div>
+            <!-- First row of title headings for the portfolio items-->
+            <div class="row">
+              <div class="col-sm-4">
+                   <h4 style="color: white; text-align: center;">Raspberry Pi Home Server</h4>
+              </div>
+              <div class="col-sm-4">
+                   <h4 style="color: white; text-align: center;">Desktop Security Application</h4>
+              </div>
+              <div class="col-sm-4">
+                   <h4 style="color: white; text-align: center;">Reckon - Web-based "Guess&nbsp;Who" Game</h4>
+              </div>
+            </div>
             <div class="row">
                 <div class="col-sm-4 portfolio-item" id="portfolio-digital21">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
@@ -233,8 +244,8 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <div style="height: 260px; width: 100%; background-color: #1D83C1" class="text-center">
-                            <img src="img/portfolio/digital21.svg" class="img-responsive digital21" style="display: block; margin: auto; padding: 15%; height=90%;">
+                        <div style="background-color: #1D83C1" class="text-center svg-div">
+                            <img src="img/portfolio/digital21.svg" class="img-responsive portfolio-svg svg" id="rasppi" alt=""/>
                         </div>
                     </a>
                 </div>
@@ -242,10 +253,12 @@
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                                <i class="fa fa-search-plus fa-2x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="">
+                        <div style="background-color: #1FA4B6;" class="text-center svg-div">
+                            <img src="img/portfolio/lock.svg" class="img-responsive portfolio-svg svg" id="lock" alt=""/>
+                        </div>
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -255,7 +268,9 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="">
+                        <div style="background-color: #BA4C63;" class="text-center svg-div">
+                            <img src="img/portfolio/question.svg" class="img-responsive portfolio-svg svg" id="question" alt=""/>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -382,7 +397,7 @@
                             <h2>Raspberry Pi Home Server</h2>
                             <hr class="star-primary">
                             <div style="height: 260px; width: 100%;" class="text-center">
-                                <img src="img/portfolio/digital21.svg" class="img-responsive digital21" style="display: block; margin: auto; padding: 5%; height=90%;">
+                                <img src="img/portfolio/digital-black.svg" class="img-responsive digital21" style="display: block; margin: auto; height: 200px;" alt="">
                             </div>
                             <p>Turned a raspberry pi (model B+) into a home server that provides the functionality of a web server, an FTP server, an NAS server, and provides cloud storage (similar to DropBox). Hosted using Apache web server and implemented using services such as OwnCloud, MySQL, SSH, Samba, Transmission, and Webmin.</p>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
@@ -392,6 +407,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Security Monitoring Application -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -405,21 +421,13 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Desktop Security Application</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/lock.svg" class="img-responsive img-centered" alt="" style="height: 200px;">
+                            <p>This desktop application was built in Java, with various command-line utilities to access computer information. The application tracks CPU processes and memory usage. Features of the application include a running log of transactions and listings of all open TCP/IP ports and all the applications and processes listening on those ports. Logs in the application include a list of all websites visited by IP address. The application also contains a custom RSS feed from a selected security website and displays headlines of site events</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                <li>Source Code:
+                                    <strong><a href="https://github.com/jtberglund/Security-Monitor">GitHub</a>
                                     </strong>
                                 </li>
                             </ul>
@@ -430,6 +438,7 @@
             </div>
         </div>
     </div>
+    
     <!-- Reckon - Web-based "Guess Who" Game -->
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -443,21 +452,18 @@
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Project Title</h2>
+                            <h2>Reckon - Web-Based "Guess Who" Game</h2>
                             <hr class="star-primary">
-                            <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                            <img src="img/portfolio/question-black.svg" class="img-responsive img-centered" alt="" style="height: 200px;">
+                            <p>This game is a web-based imitation of the classic board game, “Guess Who,” a turn-based game in which two players face off to guess the other player’s “secret character” through elimination and outright guessing. Website was built using HTML/CSS and ASP.NET on the back-end.</p>
                             <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                <!--<li>Play
+                                    <strong><a href="http://jtberglund.somee.com/
+">here</a>
                                     </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                </li>-->
+                                <li>Source Code:
+                                    <strong><a href="https://github.com/jtberglund/Reckon">GitHub</a>
                                     </strong>
                                 </li>
                             </ul>
