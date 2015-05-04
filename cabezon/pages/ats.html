@@ -97,7 +97,7 @@
                             <a href="#"><i class="fa fa-bus fa-fw"></i> Tour<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="ats.html">Automated Tour System</a>
+                                    <a class="active" href="ats.html">Automated Tour System</a>
                                 </li>
                                 <li>
                                     <a href="icts.html">Interactive Communication &amp; Tracking System</a>
@@ -120,7 +120,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Cabezón</h1>
+                        <h1 class="page-header">Automated Tour System</h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
@@ -128,11 +128,22 @@
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12"><p>Welcome to the Cabezón Administration site.</p>
-                        <p>Created by Jeremy Berglund</p><br/>
-                        <p></p></div>
-                    
+                    <h2><small>Scenarios</small></h2>
+                    <h4><small>Initial Assumption</small></h4>
+                    <p>The tour has already started, and the group of guests is making its way around the park in the tour vehicle.</p>
+                    <h4><small>Normal</small></h4>
+                    <p>The vehicle stops at every attraction, using the Heads-Up Surveillance system to point out surrounding flora and fauna. The tour guide for that vehicle is then able to give the guests additional information about that exhibits. If the guests have any questions, they are able to use the Interactive Communication system to contact a member of the park staff (such as an expert or handler of the exhibit the vehicle is currently stopped at) to ask any questions. The vehicle then resumes the tour, continuing this pattern through all exhibits until the tour has reached its conclusion.</p>
+                    <h4><small>What Can Go Wrong</small></h4>
+                    <p>The vehicle could break down. In this case, the passengers would be safely evacuated and a shuttle would come to pick them up and return them to the start of the tour, where they would be offered a free tour as compensation. </p>
+                    <p>The Interactive Communication system could break. If this happens, the tour can still function as normal, with the on-board tour guide providing as much information as possible.</p>
+                    <p>The Heads-Up Surveillance system could break. If this happened, the tour guide would have to take more time to point our surrounding flora and fauna so the passengers do not miss any exciting exhibits. </p>
+                    <h4><small>System State on Completion</small></h4>
+                    <p>The vehicle has returned to the start of the tour and all passengers have been safely evacuated. </p>
                 </div>
+                <div class="row">
+                    <h2><small>ATS Process Model</small></h2>
+                    <div class="col-lg-8 col-md-10"><img style="width: 100%;" src="../images/ATSProcessModel.svg" alt=""></div>
+                </div><br/>
                 <!-- /.row -->
             </div>
             <!-- /.container-fluid -->

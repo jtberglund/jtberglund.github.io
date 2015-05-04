@@ -85,7 +85,7 @@
                             <a href="#"><i class="fa fa-cutlery fa-fw"></i> Feeding<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="scheduler.html">Scheduler</a>
+                                    <a class="active" href="scheduler.html">Scheduler</a>
                                 </li>
                                 <li>
                                     <a href="amd.html">Automated Meal Dispersal</a>
@@ -120,7 +120,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Cabezón</h1>
+                        <h1 class="page-header">Scheduler</h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
@@ -128,11 +128,32 @@
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-12"><p>Welcome to the Cabezón Administration site.</p>
-                        <p>Created by Jeremy Berglund</p><br/>
-                        <p></p></div>
-                    
+                    <h2><small>User Requirements</small></h2>
+                    <ul>
+                        <li>Food can be delivered a maximum of once an hour, and a maximum of 6 deliveries of food per day</li>
+                        <li>There are two kinds of food, dry food (grains, etc), and climate-controlled food (meat, veggies, etc)</li>
+                        <li>For dry food, there shall be 2 weeks of food able to be stored in the feeder</li>
+                        <li>For climate-controlled food, there shall be 1 week of food able to be stored in the feeder</li>
+                        <li>Employees must be able to manually trigger a feeding from the scheduler</li>
+                        <li>The most a single feeder shall feed is 10 creatures</li>
+                        <li>Feeder capacities shall be based on the combination of those numbers and there shall always be a day of food available in the feeders, i.e. the low food indication should be when one day's worth is all that's left</li>
+                    </ul>
                 </div>
+                <div class="row">
+                    <h2><small>Architectural Design Questions</small></h2>
+                    <ol>
+                        <li><p><b>Is there a generic application architecture that can act as a template for the item that is being designed?</b></p><p>No, this system is being developed entirely from scratch</p></li>
+                        <li><p><b>How will the system be distributed across a number of cores or processors? </b></p><p>The system will largely be on single processor systems</p></li>
+                        <li><p><b>What architectural patterns or styles might be used? </b></p><p>The system will be developed with a layered architecture</p></li>
+                        <li><p><b>What will be the fundamental approach used to structure the system?</b></p><p>The system will be structured around availability (ensuring the feeders are always operational) and maintainability (ensures that further development of the system can be made)</p></li>
+                    </ol>
+                </div>
+                <div class="row">
+                    <h2><small>Unit tests</small></h2>
+                    <p>If the amount of food scheduled to be given is more than is currently stored in the feeder, the feeder will disperse all the remaining food and send out an order for more food to be supplied.</p>
+                    <p>If the amount of food scheduled to be given drops the level of food so that the feeder has less than 3 day’s supply, the feeder will send out an order for more food to be supplied.</p>
+                    <p>Otherwise, the food is dispersed normally.</p>
+                </div><br/>
                 <!-- /.row -->
             </div>
             <!-- /.container-fluid -->
